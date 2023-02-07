@@ -1,0 +1,469 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#success {
+	color: green;
+	font-size: 14px;
+	font-family: verdana;
+	letter-spacing: 1px;
+}
+
+#warning {
+	color: red;
+	font-size: 14px;
+	font-family: verdana;
+	letter-spacing: 1px;
+}
+
+
+
+										/*LOGIN OR HOMEPAGE*/
+
+.bg-image {
+	width: 100%;
+	height: 682px;
+	background: url('images/login_image.jpg');
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lg-body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#fff8, #0008);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lg-box {
+	width: 35%;
+	height: 70%;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 20px 20px 50px #0009;
+	border: 45px solid #fff;
+	border-top: 5px solid #fff;
+}
+
+#lg-box-head {
+	width: 100%;
+	height: 25%;
+	font-size: 23px;
+	display: flex;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #0001;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#lg-box-head h3 {
+	font-family: verdana;
+	color: orange;
+	font-size: 19px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	text-shadow: 1px 2px 15px darkorange;
+}
+
+#lg-box-head h6 {
+	font-family: magneto;
+}
+
+#message p,
+#message-lg p {
+	font-size: 16px;
+	font-family: cursive;
+	font-weight: bold;
+}
+
+#message-lg p a {
+	text-decoration: none;
+}
+
+#message-lg p a:hover {
+	text-decoration: underline;
+}
+
+#lg-box form {
+	height: 85%;
+	width: 100%;
+}
+
+.lg-in {
+	height: 23%;
+	width: 100%;
+}
+
+.lg-forg {
+	display: flex;
+	justify-content: flex-start;
+	height: 10%;
+	align-items: center;
+}
+
+.lg-forg a {
+	text-decoration: none;
+	font-size: 14px;
+	font-family: cursive;
+}
+
+#regis {
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#lg-proper {
+	display: flex;
+	justify-content: center;
+}
+
+.straight-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.straight-box span {
+	width: 8%;
+	height: 70%;
+	color: #ccc;
+	font-size: 21px;
+	background-color: #f6f8fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.straight-box input {
+	width: 92%;
+	height: 70%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: #f6f8fa;
+}
+
+#forg-pass {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 14px;
+}
+
+#forg-pass a {
+	text-decoration: none;
+}
+
+.straight-box input.btn {
+	width: 50%;
+	background: darkorange;	
+	color: #eee;
+	height: 80%;
+	cursor: pointer;
+	border-radius: 3px;
+	height: 70%;
+	font-family: eras demi itc;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+												/*REGISTRATION PAGE*/
+
+.sign-up-box {
+	border: 30px solid #fff;
+	border-top: 20px solid #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 15px;
+	width: 45%;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px #0003;
+	height: 95%;
+}
+
+#signup-box-head {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sign-up-box form {
+	width: 100%;
+	height: 90%;
+}
+
+.signup-input-divs {
+	width: 100%;
+	height: 12.5%;
+}
+
+#div-first-lastname {
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-lastname-box {
+	width: 47%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.first-lastname-box span {
+	width: 17%;
+	height: 70%;
+	color: #ccc;
+	font-size: 21px;
+	background-color: #f6f8fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-lastname-box input {
+	width: 83%;
+	height: 70%;
+	padding-right: 10px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: #f6f8fa;
+}
+
+.straight-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.straight-box span {
+	width: 8%;
+	height: 70%;
+	color: #ccc;
+	font-size: 21px;
+	background-color: #f6f8fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.straight-box input {
+	width: 92%;
+	height: 70%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: #f6f8fa;
+}
+
+.other {
+	flex-direction: column;	
+}
+
+#forg-pass {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 14px;
+}
+
+#forg-pass a {
+	text-decoration: none;
+}
+
+.accept-cond {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accept-cond p {
+	font-size: 14px;
+}
+
+.accept-cond p a {
+	text-decoration: none;
+}
+
+.accept-cond p input:nth-child(1) {
+	width: 40px;
+}
+
+.straight-box input.btn,
+.straight-box button.btn {
+	width: 100%;
+	background: #18355d;	
+	color: #eee;
+	height: 80%;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.straight-box button.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+
+#btn2 {
+	background-color: #fff;
+	color: #0009;
+	border: 1px solid #0008;
+}
+
+#btn2 img {
+	width: 70px;
+}
+
+#btn3 img {
+	width: 45px;
+	padding-bottom: 8px;
+}
+
+#btn3 {
+	background-color: #3b5998;
+	border: none;
+	color: #fff;
+}
+
+#first-lastname-box1 {
+	width: 100%;
+	height: 50%;
+	border-bottom: 1px solid #000;
+}
+
+.aye {
+	display: block;
+}
+
+#or {
+	width: 6%;
+	height: 100%;
+	display: flex;
+	color: #0009;
+	justify-content: center;
+	align-items: center;
+	font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET RESPONSIVENES*/
+@media(min-width: 700px) and (max-width: 1210px) {
+	.sign-up-box {
+		width: 58%;
+	}
+
+	#lg-box {
+		width: 50%;
+	}
+
+	.first-lastname-box span,
+	.straight-box span {
+		width: 15%;
+	}
+
+	.first-lastname-box input,
+	.straight-box input {
+		width: 85%;
+		font-size: 14px;
+		padding: px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*PHONE RESPONSIVENESS*/
+@media(min-width: 100px) and (max-width: 700px) {
+	.sign-up-box {
+		width: 85%;
+	}
+
+	#lg-box {
+		width: 70%;
+	}
+
+	#lg-box-head h3 {
+		font-size: 23px;
+	}
+
+	#lg-box-head h6 {
+		font-size: 14px;
+	}
+
+	.first-lastname-box span,
+	.straight-box span {
+		width: 15%;
+	}
+
+	.first-lastname-box input,
+	.straight-box input {
+		width: 85%;
+		font-size: 14px;
+		padding: px;
+		box-sizing: border-box;
+	}
+
+	.first-lastname-box span {
+		width: 30%;
+	}
+
+	.first-lastname-box input {
+		width: 70%;
+	}
+
+	.lg-forg p a {
+		font-size: 13px;
+	}
+
+	#btn-lg,
+	#btn-rg {
+		font-size: 18px;
+	}
+}

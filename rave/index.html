@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chukwuma's Rave Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="bg-image">
+		<div class="lg-body">
+			<div class="sign-up-box">
+				<div id="lg-box-head">
+					<h3>Mega-Clouds Rave Payment Gateway</h3>	
+					<h6>Please Proceed With Your Payment!</h6>
+				</div>
+				<form>
+					<div id="message"></div>
+					<div id="div-first-lastname" class="signup-input-divs">
+						<div class="first-lastname-box">
+							<span><i class="fa fa-user"></i></span><input id="name" type="text" name="name" placeholder="Firstname" required>
+						</div>
+						<div class="first-lastname-box">
+							<span><i class="fa fa-user"></i></span><input type="text" name="lastname" placeholder="Lastname" required>
+						</div>
+					</div>
+					<div class="signup-input-divs">
+						<div class="straight-box">
+							<span><i class="fa fa-envelope"></i></span><input id="email" type="email" name="email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="signup-input-divs">
+						<div class="straight-box">
+							<span><i class="fa fa-phone"></i></span><input id="num" type="number" name="phone" placeholder="Phone Number" required>
+						</div>
+					</div>
+					<div class="signup-input-divs">
+						<div class="straight-box">
+							<span><i class="fa fa-lock"></i></span><input id="amt" type="number" name="amt" placeholder="Enter amount" required>
+						</div>
+					</div>
+					<div class="signup-input-divs"></div>
+					<div class="signup-input-divs">
+						<div class="straight-box other">
+							<input id="btn-rg" class="btn" type="submit" value="Buy" name="sub">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+<script type="text/javascript" src="https://checkout.flutterwave.com/v3.js"></script>
+<script type="text/javascript">
+	var form = document.querySelector('form');
+	
+	form.addEventListener('submit', function(e) {
+		e.preventDefault();
+
+	// SETTING ORIGINAL FLUTTERWAVE CONFIGURATIONS
+		FlutterwaveCheckout({
+			public_key: "FLWPUBK_TEST-5e33eb6807f77c35301e4b175b23f9d9-X",
+			tx_ref: "ac_" + Math.floor((Math.random() * 1000000000) + 1),
+			amount: document.getElementById('amt').value,
+			currency: "NGN",
+			customer: {
+				email: document.getElementById('email').value,
+				phonenumber: document.getElementById('num').value,
+				name: document.getElementById('name').value,
+			},
+			callback: function(data) {
+				console.log(data);
+			},
+			customizations: {
+				'title': "Mega-Clouds",
+				'description': "Testing Flutterwave Integration",
+			},
+		});
+	});
+</script>	
+</body>
+</html>
